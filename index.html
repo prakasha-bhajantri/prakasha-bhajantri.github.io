@@ -29,8 +29,8 @@
     }
 
     .profile-photo {
-      width: 120px;
-      height: 120px;
+      width: 160px; /* Increased photo size */
+      height: 160px; /* Increased photo size */
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #64ffda; /* Accent border */
@@ -42,10 +42,23 @@
       text-align: left;
     }
 
+    /* New style for the separate greeting line */
+    .greeting-text {
+        margin: 0;
+        font-size: 1.5rem; /* Smaller size for "Hi, I'm" */
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 0.2rem; /* Small space between greeting and name */
+    }
+
+    /* Style for the name (now the main h1) */
     header h1 { 
         margin: 0; 
-        font-size: 2rem; 
+        font-size: 2rem; /* Keep the name large */
+        font-weight: 700; /* Make the name bold */
+        line-height: 1.2;
     }
+    
     header h3 { 
         margin-top: 0.3rem; 
         font-weight: 400; 
@@ -56,7 +69,7 @@
     }
 
     section {
-      padding: 2rem 8%;
+      padding: 0.8rem 8%; /* Reduced vertical padding for tighter sections */
       max-width: 1000px;
       margin: auto;
     }
@@ -101,7 +114,7 @@
       padding: 2rem;
       background: #000000; /* Darker footer */
       color: #e0e0e0;
-      margin-top: 2rem;
+      margin-top: 0.8rem; /* Adjusted top margin to match section padding */
     }
   </style>
 </head>
@@ -112,11 +125,13 @@
       src="./photo_pb.jpg" 
       alt="Prakasha Bhajantri Profile Photo" 
       class="profile-photo"
-      onerror="this.onerror=null;this.src='https://placehold.co/120x120/4a4a4a/ffffff?text=PB'"
+      onerror="this.onerror=null;this.src='https://placehold.co/160x160/4a4a4a/ffffff?text=PB'"
     />
     
     <div class="header-content">
-        <h1>👋 Hi, I'm <strong>Prakasha Bhajantri</strong></h1>
+        <!-- MODIFICATION: Separated greeting and name into two lines -->
+        <p class="greeting-text">👋 Hi, I'm</p>
+        <h1>Prakasha Bhajantri</h1>
         <h3>🚀 Senior Data Scientist | Generative AI Developer | Machine Learning | Deep Learning</h3>
         <p>🌍 Bengaluru, India (Open to relocation: UAE / Singapore)</p>
         <p>
@@ -136,13 +151,13 @@
   <section>
     <h2>🎯 What I Specialize In | What I Can Deliver</h2>
     <ul>
-      <li>🔍 Analytical Consulting – End-to-end Data Science Solution Frameworks</li>
-      <li>🧠 Model Evaluation & Optimization – Ensure ML models fit and scale effectively</li>
-      <li>💬 Conversational AI – Building Chatbots & Assistants powered by LLMs (Gen AI)</li>
-      <li>📊 Business Intelligence – Designing Tableau / Power BI Dashboards for actionable insights</li>
-      <li>⚙️ Experimentation & Optimization – A/B Testing, Hypothesis Testing, and Experiment Design</li>
-      <li>🚀 AI/MLOps – Creating robust CI/CD Pipelines for ML systems ensuring seamless integration and deployment</li>
-      <li>🧩 AI API Development – Creating robust Python backends and REST APIs for ML systems</li>
+      <li>🔍 Analytical Consulting :- End-to-end Data Science Solution Frameworks</li>
+      <li>🧠 Model Evaluation & Optimization :- Ensure ML models fit and scale effectively</li>
+      <li>💬 Conversational AI :- Building Chatbots & Assistants powered by LLMs (Gen AI)</li>
+      <li>📊 Business Intelligence :- Designing Tableau / Power BI Dashboards for actionable insights</li>
+      <li>⚙️ Experimentation & Optimization :- A/B Testing, Hypothesis Testing, and Experiment Design</li>
+      <li>🚀 AI/MLOps :- Creating robust CI/CD Pipelines for ML systems ensuring seamless integration and deployment</li>
+      <li>🧩 AI API Development :- Creating robust Python backends and REST APIs for ML systems</li>
     </ul>
   </section>
 
@@ -163,13 +178,13 @@
   <section>
     <h2>🏆 Some Impactful Work I’ve Done</h2>
     <ul>
-      <li>🧩 Built GenAI Assistants for RCA and KPI automation — helped reduce network downtime</li>
-      <li>🤖 Developed LLM-based RAG Meeting Summarizer integrated with ServiceNow — improved issue resolution</li>
-      <li>📈 Created Cost Forecasting Models — enabled better financial planning and cost optimization</li>
-      <li>📈 Built Failure Prediction (LSTM-RNN) — planned predictive maintenance in advance</li>
-      <li>💬 Designed Next Best Action Recommender System — converted one-time purchasers to repeat buyers</li>
-      <li>📊 Conducted A/B Testing on Email Campaigns — enhanced engagement rates</li>
-      <li>🧠 Built CLTV Models — identified and retained high-value customers</li>
+      <li>🧩 Built GenAI Assistants for RCA and KPI automation :- Helped reduce network downtime</li>
+      <li>🤖 Developed LLM-based RAG Meeting Summarizer integrated with ServiceNow :- Improved issue resolution</li>
+      <li>📈 Created Cost Forecasting Models :-  Enabled better financial planning and cost optimization</li>
+      <li>📈 Built Failure Prediction (LSTM-RNN) :- Planned predictive maintenance in advance</li>
+      <li>💬 Designed Next Best Action Recommender System :- Converted one-time purchasers to repeat buyers</li>
+      <li>📊 Conducted A/B Testing on Email Campaigns :- Enhanced engagement rates</li>
+      <li>🧠 Built CLTV Models :- Identified and retained high-value customers</li>
       <li>🧠 YOLO-v4 Object Detection for Pokémon Game</li>
       <li>💬 Stakeholder Management | Leadership & Project Management</li>
     </ul>
